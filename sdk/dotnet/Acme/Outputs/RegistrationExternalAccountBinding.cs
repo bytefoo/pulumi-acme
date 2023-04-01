@@ -8,18 +8,23 @@ using System.Threading.Tasks;
 using Pulumi.Serialization;
 using Pulumi;
 
-namespace ByteFoo.Acme.Outputs
+namespace ByteFoo.PulumiPackage.Acme.Outputs
 {
 
     [OutputType]
-    public sealed class CertificateHttpMemcachedChallenge
+    public sealed class RegistrationExternalAccountBinding
     {
-        public readonly ImmutableArray<string> Hosts;
+        public readonly string HmacBase64;
+        public readonly string KeyId;
 
         [OutputConstructor]
-        private CertificateHttpMemcachedChallenge(ImmutableArray<string> hosts)
+        private RegistrationExternalAccountBinding(
+            string hmacBase64,
+
+            string keyId)
         {
-            Hosts = hosts;
+            HmacBase64 = hmacBase64;
+            KeyId = keyId;
         }
     }
 }

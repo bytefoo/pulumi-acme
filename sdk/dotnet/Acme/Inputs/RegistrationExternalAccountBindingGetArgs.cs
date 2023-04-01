@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using Pulumi.Serialization;
 using Pulumi;
 
-namespace ByteFoo.Acme.Inputs
+namespace ByteFoo.PulumiPackage.Acme.Inputs
 {
 
     public sealed class RegistrationExternalAccountBindingGetArgs : global::Pulumi.ResourceArgs

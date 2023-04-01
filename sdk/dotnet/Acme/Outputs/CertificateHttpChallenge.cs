@@ -8,23 +8,23 @@ using System.Threading.Tasks;
 using Pulumi.Serialization;
 using Pulumi;
 
-namespace ByteFoo.Acme.Outputs
+namespace ByteFoo.PulumiPackage.Acme.Outputs
 {
 
     [OutputType]
-    public sealed class RegistrationExternalAccountBinding
+    public sealed class CertificateHttpChallenge
     {
-        public readonly string HmacBase64;
-        public readonly string KeyId;
+        public readonly int? Port;
+        public readonly string? ProxyHeader;
 
         [OutputConstructor]
-        private RegistrationExternalAccountBinding(
-            string hmacBase64,
+        private CertificateHttpChallenge(
+            int? port,
 
-            string keyId)
+            string? proxyHeader)
         {
-            HmacBase64 = hmacBase64;
-            KeyId = keyId;
+            Port = port;
+            ProxyHeader = proxyHeader;
         }
     }
 }

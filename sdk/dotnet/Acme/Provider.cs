@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using Pulumi.Serialization;
 using Pulumi;
 
-namespace ByteFoo.Acme
+namespace ByteFoo.PulumiPackage.Acme
 {
     /// <summary>
     /// The provider type for the acme package. By default, resources use package-wide configuration

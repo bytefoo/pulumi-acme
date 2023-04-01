@@ -8,17 +8,18 @@ using System.Threading.Tasks;
 using Pulumi.Serialization;
 using Pulumi;
 
-namespace ByteFoo.Acme.Inputs
+namespace ByteFoo.PulumiPackage.Acme.Outputs
 {
 
-    public sealed class CertificateTlsChallengeArgs : global::Pulumi.ResourceArgs
+    [OutputType]
+    public sealed class CertificateHttpMemcachedChallenge
     {
-        [Input("port")]
-        public Input<int>? Port { get; set; }
+        public readonly ImmutableArray<string> Hosts;
 
-        public CertificateTlsChallengeArgs()
+        [OutputConstructor]
+        private CertificateHttpMemcachedChallenge(ImmutableArray<string> hosts)
         {
+            Hosts = hosts;
         }
-        public static new CertificateTlsChallengeArgs Empty => new CertificateTlsChallengeArgs();
     }
 }

@@ -8,20 +8,17 @@ using System.Threading.Tasks;
 using Pulumi.Serialization;
 using Pulumi;
 
-namespace ByteFoo.Acme.Inputs
+namespace ByteFoo.PulumiPackage.Acme.Inputs
 {
 
-    public sealed class CertificateHttpChallengeArgs : global::Pulumi.ResourceArgs
+    public sealed class CertificateTlsChallengeGetArgs : global::Pulumi.ResourceArgs
     {
         [Input("port")]
         public Input<int>? Port { get; set; }
 
-        [Input("proxyHeader")]
-        public Input<string>? ProxyHeader { get; set; }
-
-        public CertificateHttpChallengeArgs()
+        public CertificateTlsChallengeGetArgs()
         {
         }
-        public static new CertificateHttpChallengeArgs Empty => new CertificateHttpChallengeArgs();
+        public static new CertificateTlsChallengeGetArgs Empty => new CertificateTlsChallengeGetArgs();
     }
 }

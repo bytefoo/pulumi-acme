@@ -4,7 +4,7 @@
 using System;
 using System.Collections.Immutable;
 
-namespace ByteFoo.Acme
+namespace ByteFoo.PulumiPackage.Acme
 {
     public static class Config
     {

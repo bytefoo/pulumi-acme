@@ -8,18 +8,23 @@ using System.Threading.Tasks;
 using Pulumi.Serialization;
 using Pulumi;
 
-namespace ByteFoo.Acme.Outputs
+namespace ByteFoo.PulumiPackage.Acme.Outputs
 {
 
     [OutputType]
-    public sealed class CertificateTlsChallenge
+    public sealed class CertificateDnsChallenge
     {
-        public readonly int? Port;
+        public readonly ImmutableDictionary<string, object>? Config;
+        public readonly string Provider;
 
         [OutputConstructor]
-        private CertificateTlsChallenge(int? port)
+        private CertificateDnsChallenge(
+            ImmutableDictionary<string, object>? config,
+
+            string provider)
         {
-            Port = port;
+            Config = config;
+            Provider = provider;
         }
     }
 }

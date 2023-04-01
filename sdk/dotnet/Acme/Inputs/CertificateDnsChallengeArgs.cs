@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 using Pulumi.Serialization;
 using Pulumi;
 
-namespace ByteFoo.Acme.Inputs
+namespace ByteFoo.PulumiPackage.Acme.Inputs
 {
 
-    public sealed class CertificateDnsChallengeGetArgs : global::Pulumi.ResourceArgs
+    public sealed class CertificateDnsChallengeArgs : global::Pulumi.ResourceArgs
     {
         [Input("config")]
         private InputMap<object>? _config;
@@ -24,9 +24,9 @@ namespace ByteFoo.Acme.Inputs
         [Input("provider", required: true)]
         public Input<string> Provider { get; set; } = null!;
 
-        public CertificateDnsChallengeGetArgs()
+        public CertificateDnsChallengeArgs()
         {
         }
-        public static new CertificateDnsChallengeGetArgs Empty => new CertificateDnsChallengeGetArgs();
+        public static new CertificateDnsChallengeArgs Empty => new CertificateDnsChallengeArgs();
     }
 }

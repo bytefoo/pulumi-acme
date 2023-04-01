@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using Pulumi.Serialization;
 using Pulumi;
 
-namespace ByteFoo.Acme
+namespace ByteFoo.PulumiPackage.Acme
 {
     [AcmeResourceType("acme:index/registration:Registration")]
     public partial class Registration : global::Pulumi.CustomResource

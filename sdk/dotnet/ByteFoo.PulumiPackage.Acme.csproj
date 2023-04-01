@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Authors>ByteFoo</Authors>
-    <Company>ByteFoo</Company>
+    <Authors>bytefoo</Authors>
+    <Company>bytefoo</Company>
     <Description>A Pulumi package for creating and managing acme cloud resources.</Description>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <PackageProjectUrl>https://www.pulumi.com</PackageProjectUrl>

@@ -8,18 +8,17 @@ using System.Threading.Tasks;
 using Pulumi.Serialization;
 using Pulumi;
 
-namespace ByteFoo.Acme.Outputs
+namespace ByteFoo.PulumiPackage.Acme.Inputs
 {
 
-    [OutputType]
-    public sealed class CertificateHttpWebrootChallenge
+    public sealed class CertificateTlsChallengeArgs : global::Pulumi.ResourceArgs
     {
-        public readonly string Directory;
+        [Input("port")]
+        public Input<int>? Port { get; set; }
 
-        [OutputConstructor]
-        private CertificateHttpWebrootChallenge(string directory)
+        public CertificateTlsChallengeArgs()
         {
-            Directory = directory;
         }
+        public static new CertificateTlsChallengeArgs Empty => new CertificateTlsChallengeArgs();
     }
 }
