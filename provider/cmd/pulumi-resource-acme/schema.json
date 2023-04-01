@@ -5,14 +5,14 @@
     "keywords": [
         "pulumi",
         "acme",
-        "category/cloud"
+        "bytefoo"
     ],
     "homepage": "https://www.pulumi.com",
     "license": "Apache-2.0",
     "attribution": "This Pulumi package is based on the [`acme` Terraform Provider](https://github.com/vancluever/terraform-provider-acme).",
     "repository": "https://github.com/bytefoo/pulumi-acme",
     "pluginDownloadURL": "github://api.github.com/bytefoo/pulumi-acme",
-    "publisher": "ByteFoo",
+    "publisher": "bytefoo",
     "meta": {
         "moduleFormat": "(.*)(?:/[^/]*)"
     },
@@ -23,7 +23,7 @@
             "packageReferences": {
                 "Pulumi": "3.*"
             },
-            "rootNamespace": "ByteFoo"
+            "rootNamespace": "ByteFoo.PulumiPackage"
         },
         "go": {
             "generateExtraInputTypes": true,
@@ -41,13 +41,13 @@
             },
             "disableUnionOutputTypes": true,
             "packageDescription": "A Pulumi package for creating and managing acme cloud resources.",
-            "packageName": "@bytefoo/acme",
+            "packageName": "@bytefoo/pulumi-acme",
             "readme": "\u003e This provider is a derived work of the [Terraform Provider](https://github.com/vancluever/terraform-provider-acme)\n\u003e distributed under [MPL 2.0](https://www.mozilla.org/en-US/MPL/2.0/). If you encounter a bug or missing feature,\n\u003e first check the [`pulumi-acme` repo](https://github.com/bytefoo/pulumi-acme/issues); however, if that doesn't turn up anything,\n\u003e please consult the source [`terraform-provider-acme` repo](https://github.com/vancluever/terraform-provider-acme/issues).",
             "typescriptVersion": ""
         },
         "python": {
             "compatibility": "tfbridge20",
-            "packageName": "bytefoo_acme",
+            "packageName": "bytefoo_pulumi_acme",
             "readme": "\u003e This provider is a derived work of the [Terraform Provider](https://github.com/vancluever/terraform-provider-acme)\n\u003e distributed under [MPL 2.0](https://www.mozilla.org/en-US/MPL/2.0/). If you encounter a bug or missing feature,\n\u003e first check the [`pulumi-acme` repo](https://github.com/bytefoo/pulumi-acme/issues); however, if that doesn't turn up anything,\n\u003e please consult the source [`terraform-provider-acme` repo](https://github.com/vancluever/terraform-provider-acme/issues).",
             "requires": {
                 "pulumi": "\u003e=3.0.0,\u003c4.0.0"
